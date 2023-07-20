@@ -78,7 +78,7 @@ main (int argc, char **argv)
   }
 
   if (prog_mode & PROG_MODE_IONAME) {
-    FILE *iofile = fopen ("/usr/share/gmtdisas/stm8.inc", "r");
+    FILE *iofile = fopen (STM8_INC_PATH "/stm8.inc", "r");
     if (!iofile) {
       puts (strerror(errno));
       prog_mode &= ~PROG_MODE_IONAME;
