@@ -35,8 +35,8 @@ typedef struct {
 
 static const instruction ins_table[]={
     {"neg  ", SHORTOFF_SP_2, 0, 2},
-    {"rrwa ", REG_X, 0, 1},
-    {"rlwa ", REG_X, 0, 1},
+    {"rrwa ", REG_X, REG_A, 1},
+    {"rlwa ", REG_X, REG_A, 1},
     {"cpl  ", SHORTOFF_SP_2, 0, 2},
     {"sra  ", SHORTOFF_SP_2, 0, 2},
     {"void ", 0, 0, 0},
